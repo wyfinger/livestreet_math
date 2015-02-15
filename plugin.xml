@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>
+        <lang name="default">MathJax</lang>
+        <lang name="russian">MathJax</lang>
+    </name>
+    <author>
+        <lang name="default">Wyfinger</lang>
+        <lang name="russian">Wyfinger</lang>
+    </author>
+    <homepage>http://energobook.ru</homepage>
+    <version>0.1</version>
+    <requires>
+        <livestreet>0.5.0</livestreet>
+        <plugins>
+        </plugins>
+    </requires>
+    <description>
+        <lang name="default">Formulas in messages by MathJax</lang>
+        <lang name="russian">Формулы в топиках при помощи библиотеки MathJax</lang>
+    </description>
+    <delegate>
+        <module></module>
+        <action></action>
+        <template></template>
+        <entity></entity>
+    </delegate>
+</plugin>
