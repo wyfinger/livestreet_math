@@ -1,4 +1,10 @@
 <?php
+/**
+ * Math for LiveStreet
+ * Plugin for use math in topics in MathML format
+ * (C) Wyfinger, wyfinger@yandex.ru
+ *
+ */
 
 // Добавление тега <math> в разрешенные теги
 $aAllowTags = Config::Get('jevix.default.cfgAllowTags');
@@ -22,11 +28,7 @@ Config::Set('jevix.default.cfgSetTagNoAutoBr', $aSetTagNoAutoBr);
 
 // обрабатываем содержимое тега фуловым калбеком
 $aSetTagCallbackFull = Config::Get('jevix.default.cfgSetTagCallbackFull');
-$aSetTagCallbackFull[0][] = array('math', 'CallbackTagMath');
+$aSetTagCallbackFull[] = array('math', array('_this_','CallbackTagMath'));
 Config::Set('jevix.default.cfgSetTagCallbackFull', $aSetTagCallbackFull);
 
-// в калбеке добавляем спецификацию внутрь тега
-function CallbackTagMath($sTag,$aParams,$content) {
-    $ret = "<$sTag xmlns=\"http://www.w3.org/1998/Math/MathML\">$content</$sTag>";
-    return $ret;
-}
+?>

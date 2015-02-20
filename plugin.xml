@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin>
     <name>
-        <lang name="default">MathJax</lang>
-        <lang name="russian">MathJax</lang>
+        <lang name="default">Math</lang>
+        <lang name="russian">Формулы</lang>
     </name>
     <author>
         <lang name="default">Wyfinger</lang>
@@ -16,8 +16,8 @@
         </plugins>
     </requires>
     <description>
-        <lang name="default">Formulas in messages by MathJax</lang>
-        <lang name="russian">Формулы в топиках при помощи библиотеки MathJax</lang>
+        <lang name="default">Formulas in messages in MathML format.</lang>
+        <lang name="russian">Формулы в топиках в формате MathML.</lang>
     </description>
     <delegate>
         <module></module>
