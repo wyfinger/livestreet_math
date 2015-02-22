@@ -13,13 +13,6 @@ if (!class_exists('Plugin')) {
 class PluginMath extends Plugin {
 
     /**
-     * Переопределяем класс ModuleText, т.к. нам нужен метод для обработчика тега <math> Jevix-а
-     */
-    protected $aInherits=array(
-        'module'  =>array('ModuleText'=>'PluginMath_ModuleText')
-    );
-
-    /**
      * Активация плагина
      * @return bool Удалось ли активизироваться
      */
@@ -35,6 +28,7 @@ class PluginMath extends Plugin {
         // Внедряем свой JavaScript и Css на страницу
         $this->Viewer_AppendScript(Plugin::GetTemplateWebPath(__CLASS__) . 'js/math.js');
         $this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'css/math.css');
+        $this->Viewer_AppendScript('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML', array('merge' => false));
     }
 }
 

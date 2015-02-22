@@ -20,9 +20,9 @@ ls.settings.getMarkitup = function() {
     return oSettings;
 };
 
-// MathJax чтобы формулы везде отображались одинаково, закомментируйте если не нужно
-$(window).on('load', function() {
-    var script = document.createElement('script');
-    script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    document.body.children[0].appendChild(script);
-});
+//MathJax чтобы формулы везде отображались одинаково, закомментируйте если не нужно
+//$(window).on('load', function() {
+//    var script = document.createElement('script');
+//    script.src = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+//    document.body.children[0].appendChild(script);
+//});
