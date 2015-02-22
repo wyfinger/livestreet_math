@@ -28,7 +28,9 @@ class PluginMath extends Plugin {
         // Внедряем свой JavaScript и Css на страницу
         $this->Viewer_AppendScript(Plugin::GetTemplateWebPath(__CLASS__) . 'js/math.js');
         $this->Viewer_AppendStyle(Plugin::GetTemplateWebPath(__CLASS__) . 'css/math.css');
-        $this->Viewer_AppendScript('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML', array('merge' => false));
+        if(Config::Get('plugin.math.use_mahjax')) {
+            $this->Viewer_AppendScript('https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML', array('merge' => false));
+        }
     }
 }
 

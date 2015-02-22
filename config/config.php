@@ -114,4 +114,9 @@ $aJevixConfig['cfgSetTagNoTypography'][0][0] = array_merge($aJevixConfig['cfgSet
 // Сохраняем
 Config::Set('jevix.default',$aJevixConfig);
 
+// Настройки самого плагина
+$config['use_mahjax'] = true;  // Использовать MathJax для красивого отображения формул
+
+return $config;
+
 ?>
