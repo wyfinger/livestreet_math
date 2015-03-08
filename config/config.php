@@ -21,7 +21,7 @@ $aAllowTags = array_merge(array($aMathTag),$aMathSubTags);
 $aAllowTagParams = array(
     array(
         'math',
-        array('dir', 'indentalign', 'overflow', 'wrs:positionable', 'style'=>'#text')
+        array('dir', 'indentalign', 'overflow', 'wrs:positionable')
     ),
     array(
         'maction',
@@ -41,7 +41,7 @@ $aAllowTagParams = array(
     ),
     array(
         'mi',
-        array('mathcolor', 'mathsize', 'mathvariant', 'style'=>'#text')
+        array('mathcolor', 'mathsize', 'mathvariant')
     ),
     array(
         'mn',
@@ -57,7 +57,7 @@ $aAllowTagParams = array(
     ),
     array(
         'mrow',
-        array('style' => '#text', 'wrs:positionable')
+        array('wrs:positionable')
     ),
     array(
         'mspace',
